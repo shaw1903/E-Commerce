@@ -1,10 +1,51 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using E_Commerce.Data;
+using E_Commerce.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using System.IO;
+using static System.Console;
+using System.Net.Http.Headers;
+using E_Commerce.Controllers;
+
 var builder = WebApplication.CreateBuilder(args);
+
+if(builder.Environment.IsDevelopment())
+{
+builder.Services.AddDbContext<JumaContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+    
+}
+else
+{
+builder.Services.AddDbContext<JumaContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("ProductionJuma")));
+}
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddDataProtection();
+builder.Services.AddRazorPages();
+      
+string databasePath = Path.Combine("..", "Juma.db");
+builder.Services.AddDbContext<JumaContext>(options => 
+options.UseSqlite($"Data Source={databasePath}"));
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+}
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -15,9 +56,9 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.MapRazorPages();
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

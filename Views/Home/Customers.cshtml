@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Customers>
+<h1>@{
+    ViewData["Title"] = "Customers";
+}</h1>
+<p>Services</p>
+<div class="container-fluid text-center">
+    <h1 class="display-4">Services</h1>
+    <dd>@Html.DisplayNameFor(model => model.CustomerName)</dd>
+
+    <p>
+        @foreach (var item in Model)
+        {
+        <dt>Order Number</dt>
+        <dd>@Html.DisplayFor(modelItem => item.CustomerName)</dd>
+        }
+    </p>
+</div>
