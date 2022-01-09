@@ -27,10 +27,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR2FsbGVyeS9XZWRkaW5ncy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Home/Contact.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db250YWN0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Home/Customers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9DdXN0b21lcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -41,6 +37,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Home/Services.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TZXJ2aWNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/SendMail/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VuZE1haWwvQ29udGFjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Shared/Error.cshtml]

@@ -574,3 +574,12 @@
 /Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/obj/Debug/net6.0/ref/E-Commerce.dll
 /Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/obj/Debug/net6.0/E-Commerce.pdb
 /Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/obj/Debug/net6.0/E-Commerce.genruntimeconfig.cache
+/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/bin/Debug/net6.0/package-lock.json
+/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/bin/Debug/net6.0/package.json
+/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.UI.dll
+/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/bin/Debug/net6.0/Microsoft.Extensions.FileProviders.Embedded.dll
+/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
+/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/obj/Debug/net6.0/E-Commerce.MvcApplicationPartsAssemblyInfo.cs

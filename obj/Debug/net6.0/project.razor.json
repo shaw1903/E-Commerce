@@ -16318,6 +16318,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/SendMail/Contact.cshtml",
+      "TargetPath": "Views\\SendMail\\Contact.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -16325,11 +16330,6 @@
     {
       "FilePath": "/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Home/Contact.cshtml",
-      "TargetPath": "Views\\Home\\Contact.cshtml",
       "FileKind": "mvc"
     },
     {
