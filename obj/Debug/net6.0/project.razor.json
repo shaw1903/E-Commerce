@@ -16308,8 +16308,18 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Gallery/Weddings.cshtml",
-      "TargetPath": "Views\\Gallery\\Weddings.cshtml",
+      "FilePath": "/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Image/Weddings.cshtml",
+      "TargetPath": "Views\\Image\\Weddings.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Shopping/Cart.cshtml",
+      "TargetPath": "Views\\Shopping\\Cart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Shopping/Checkout.cshtml",
+      "TargetPath": "Views\\Shopping\\Checkout.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16328,8 +16338,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Image/Gallery.cshtml",
+      "TargetPath": "Views\\Image\\Gallery.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Image/Shows.cshtml",
+      "TargetPath": "Views\\Image\\Shows.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16340,16 +16360,6 @@
     {
       "FilePath": "/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Gallery/Shows.cshtml",
-      "TargetPath": "Views\\Gallery\\Shows.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Gallery/Gallery.cshtml",
-      "TargetPath": "Views\\Gallery\\Gallery.cshtml",
       "FileKind": "mvc"
     },
     {

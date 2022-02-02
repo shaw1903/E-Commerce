@@ -583,3 +583,7 @@
 /Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
 /Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
 /Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/obj/Debug/net6.0/E-Commerce.MvcApplicationPartsAssemblyInfo.cs
+/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/bin/Debug/net6.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/bin/Debug/net6.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/bin/Debug/net6.0/Newtonsoft.Json.Bson.dll
+/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/bin/Debug/net6.0/Stripe.net.dll

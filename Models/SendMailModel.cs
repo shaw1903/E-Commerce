@@ -13,10 +13,16 @@ namespace E_Commerce.Models
     public class SendMailModel
     {
         public string From { get; set; }
+        [Required(ErrorMessage = "You must enter an email address to respond to.")]
+
         public string ReturnEmailAddress { get; set; }
+        [Required(ErrorMessage = "You must enter a sender.")]
+
         public string FromName { get; set; }
         public string To { get; set; }
         public string ToName { get; set; }
+        [Required(ErrorMessage = "You must enter a subject.")]
+
         public string Subject { get; set; }
         public string Body { get; set; }
         public string htmlMailContents { get; set; }

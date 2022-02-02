@@ -11,26 +11,27 @@ using System.Net.Http.Json;
 using E_Commerce.Models;
 using E_Commerce.Data;
 using System.Text.Encodings.Web;
+using E_Commerce.Data.Services;
 
 
 namespace E_Commerce.Controllers
 {
-    public class GalleryController : Controller
+    public class ImageController : Controller
     {
-        private readonly ILogger<GalleryController> _logger;
+        private readonly ILogger<ImageController> _logger;
         private readonly IHttpClientFactory clientFactory;
-        private readonly JumaContext db;
+        private readonly IImageService _service;
 
-        public GalleryController(ILogger<GalleryController> logger, JumaContext injectedContext)
+        public ImageController(IImageService service)
         {
-            _logger = logger;
-            db = injectedContext;
+            _service = service;
         }
         [Route("Gallery")]
 
         public IActionResult Gallery()
         {
-            return View();
+            var data = _service.GetAll();
+            return View(data);
         }
         [Route("/Shows")]
 
