@@ -1,7 +1,5 @@
-@using E_Commerce.Models
-
 @{
-    ViewData["Title"] = "Shopping cart summary";
+    ViewData["Title"] = "Cart";
 }
 
 <div class="row">
@@ -21,7 +19,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var item in Model.ShoppingCart.ShoppingCartItems)
+                @foreach (var item in Model.ShoppingCa)
                 {
                     <tr>
                         <td class="align-middle">@item.Amount</td>
