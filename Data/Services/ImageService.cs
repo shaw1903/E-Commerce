@@ -5,12 +5,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using E_Commerce.Models;
 
-namespace E_Commerce.Data.Services
+namespace E_Commerce.Data
 {
     public class ImageService : IImageService
     {
-        public ImageService(JumaContext db)
+        private readonly JumaContext db;
+
+        public ImageService(JumaContext injectedContext)
         {
+            db = injectedContext;
         }
 
         public void FileReader(int ItemNumber, string ItemName, string ImageURL, DateTime DateTaken)
@@ -26,12 +29,9 @@ namespace E_Commerce.Data.Services
                 Console.WriteLine("Item Number = {0}, ItemName = {1}, ImageURL = {2}, Date Taken = {3}", ItemNumber, ItemName, ImageURL, DateTaken);
             }           
         }
-
-        private readonly JumaContext db;
-
-        public void Add(Images images)
+        public void Add(Images Images)
         {
-            db.Images.Add(images);
+            db.Images.Add(Images);
             db.SaveChanges();
         }
 
@@ -51,7 +51,7 @@ namespace E_Commerce.Data.Services
             throw new NotImplementedException();
         }
 
-        public Images Update(int ItemNumber, Images newImages)
+        public Images Update(int ItemNumber, Images Images)
         {
             throw new NotImplementedException();
         }

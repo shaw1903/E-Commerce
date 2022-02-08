@@ -12,7 +12,7 @@ using E_Commerce.Models;
 namespace E_Commerce.Models
 {
     [Table("Images")]
-    public class Images  
+    public class Images 
     {  
         public Images()
         {
@@ -26,6 +26,7 @@ namespace E_Commerce.Models
         public string Event {get; set;}
         public string ImageURL { get; set; } 
         public virtual IEnumerable<Orders> Orders { get; set; }
+
 
     }
 }

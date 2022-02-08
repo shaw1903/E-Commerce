@@ -9,7 +9,6 @@ using Microsoft.EntityFrameworkCore;
 using System.Net.Http;
 using System.Net.Http.Json;
 using E_Commerce.Models;
-
 using E_Commerce.Data;
 using System.Text.Encodings.Web;
 using E_Commerce.Data.Services;
@@ -21,26 +20,25 @@ namespace E_Commerce.Controllers
     {
         private readonly ILogger<ImageController> _logger;
         private readonly IHttpClientFactory clientFactory;
-        private readonly IImageService _service;
-        private readonly JumaContext db;
-
-
-        public ImageController(IImageService service)
+        private IImageService _service;
+        public ImageController(ILogger<ImageController> logger, IImageService service)
         {
+            _logger = logger;
             _service = service;
         }
-        [Route("Gallery")]
 
+        [Route("Gallery")]
         public IActionResult Gallery()
         {
-            var data = _service.GetAll();
             return View();
         }
         [Route("/Shows")]
 
         public IActionResult Shows()
         {
-            return View();
+            var data = _service.GetAll();
+            //var data = db.Images.ToList();
+            return View(data);
         }
         [Route("/Weddings")]
 

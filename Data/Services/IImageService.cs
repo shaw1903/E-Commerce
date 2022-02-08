@@ -4,14 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using E_Commerce.Models;
 
-namespace E_Commerce.Data.Services
+namespace E_Commerce.Data
 {
     public interface IImageService
     {
         IEnumerable<Images> GetAll();
         Images GetImages(int ItemNumber);
-        void Add(Images images);
-        Images Update(int ItemNumber, Images newImages);
+        void Add(Images Images);
+        Images Update(int ItemNumber, Images images);
         void Delete(int ItemNumber);
     }
 }

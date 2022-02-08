@@ -25,9 +25,6 @@ namespace E_Commerce.Data
         public virtual DbSet<Images> Images { get; set; } = null!;
         public virtual DbSet<Customers> Customers { get; set; } = null!;
         
-
-        //public DbSet<Orders> Order => Set<Orders>();
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string path = System.IO.Path.Combine(System.Environment.CurrentDirectory, "Juma.db");

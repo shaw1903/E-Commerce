@@ -1,9 +1,8 @@
 --
--- File generated with SQLiteStudio v3.3.3 on Sun Jan 2 15:04:02 2022
+-- File generated with SQLiteStudio v3.3.3 on Sat Feb 5 21:30:27 2022
 --
 -- Text encoding used: UTF-8
 --
-PRAGMA foreign_keys = off;
 BEGIN TRANSACTION;
 
 -- Table: __EFMigrationsHistory
@@ -75,6 +74,23 @@ CREATE TABLE Images (
     ImageURL   STRING     NOT NULL
 );
 
+INSERT INTO Images (
+                       ItemNumber,
+                       ItemName,
+                       ItemPrice,
+                       DateTaken,
+                       Event,
+                       ImageURL
+                   )
+                   VALUES (
+                       1,
+                       'Picture1',
+                       10,
+                       '12/03/21',
+                       'Show1',
+                       '/Users/Seoras/Pictures/Shows/Show1/PHOTO-2021-11-03-11-15-44 6.jpg'
+                   );
+
 
 -- Table: Orders
 CREATE TABLE Orders (
@@ -114,4 +130,3 @@ INSERT INTO Orders (
 
 
 COMMIT TRANSACTION;
-PRAGMA foreign_keys = on;

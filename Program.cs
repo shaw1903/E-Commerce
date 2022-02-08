@@ -33,6 +33,8 @@ else
 {
 builder.Services.AddDbContext<JumaContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("ProductionJuma")));
+
+    //Services
     builder.Services.AddScoped<IImageService, ImageService>();
 }
 

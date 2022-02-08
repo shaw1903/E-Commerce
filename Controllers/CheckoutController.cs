@@ -23,7 +23,7 @@ namespace E_Commerce.Controllers
     {
         public string option { get; set; }
     }
-    public class CheckoutApiController : Controller
+    public class CheckoutController : Controller
     {
         [HttpPost]
         public ActionResult Create()
@@ -49,6 +49,12 @@ namespace E_Commerce.Controllers
 
             Response.Headers.Add("Location", session.Url);
             return new StatusCodeResult(303);
+        }
+        
+        [Route("/Cart")]
+        public IActionResult Cart()
+        {
+            return View();
         }
     }
 
