@@ -15,11 +15,11 @@ namespace E_Commerce.Models
   public class Orders 
   {
         [Key]
-        [Column(TypeName = "INT")]
-        public int OrderNumber { get; set; }
+        [Column(TypeName = "INTEGER")]
+        public int OrderID { get; set; }
         public int OrderDate { get; set; }
         public decimal OrderTotal { get; set; }
-        public int ItemNumber { get; set; }
+        public int ItemID { get; set; }
         public int ItemQuantity { get; set; }
         public decimal ItemPrice { get; set; }
         public bool OrderSuccessful { get; set; }
@@ -27,7 +27,7 @@ namespace E_Commerce.Models
     public virtual ICollection<Images> Image { get; set; }
     public string CustomerName { get; set; }
 
-        //public ItemNumber ItemNumber { get; set; }
+        //public ItemID ItemID { get; set; }
         //public  ItemPrice ItemPrice { get; set; }
 
   }

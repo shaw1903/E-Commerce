@@ -16313,13 +16313,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Shopping/Cart.cshtml",
-      "TargetPath": "Views\\Shopping\\Cart.cshtml",
+      "FilePath": "/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Checkout/Checkout.cshtml",
+      "TargetPath": "Views\\Checkout\\Checkout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Shopping/Checkout.cshtml",
-      "TargetPath": "Views\\Shopping\\Checkout.cshtml",
+      "FilePath": "/Users/Seoras/Desktop/TechnologySolutionsAberdeen/Projects/E-Commerce/Views/Checkout/Cart.cshtml",
+      "TargetPath": "Views\\Checkout\\Cart.cshtml",
       "FileKind": "mvc"
     },
     {

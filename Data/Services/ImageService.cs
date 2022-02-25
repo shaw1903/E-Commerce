@@ -16,24 +16,13 @@ namespace E_Commerce.Data
             db = injectedContext;
         }
 
-        public void FileReader(int ItemNumber, string ItemName, string ImageURL, DateTime DateTaken)
-        {
-            ItemNumber = 000;
-            string MasterPath = "/Users/Seoras/Pictures/Shows/Show1";
-            foreach(string AllFiles in Directory.EnumerateFiles(MasterPath))
-            {
-                ItemNumber++;
-                ItemName = Path.GetFileName(AllFiles);
-                ImageURL = Path.GetFullPath(AllFiles);
-                DateTaken = File.GetCreationTime(AllFiles);
-                Console.WriteLine("Item Number = {0}, ItemName = {1}, ImageURL = {2}, Date Taken = {3}", ItemNumber, ItemName, ImageURL, DateTaken);
-            }           
-        }
+
         public void Add(Images Images)
         {
             db.Images.Add(Images);
             db.SaveChanges();
         }
+
 
         public void Delete(int ItemNumber)
         {
@@ -49,6 +38,12 @@ namespace E_Commerce.Data
         public Images GetImages(int ItemNumber)
         {
             throw new NotImplementedException();
+        }
+
+        public IEnumerable<Images> FindLastItem(int ItemNumber)
+        {
+            var result = db.Images.ToList().Max();
+            return (IEnumerable<Images>)result;
         }
 
         public Images Update(int ItemNumber, Images Images)

@@ -19,7 +19,8 @@ namespace E_Commerce.Models
             Orders = new HashSet<Orders>();
         }
         [Key]  
-        public int ItemNumber { get; set; }  
+        
+        public int ItemID { get; set; }  
         public string ItemName { get; set; }  
         public decimal ItemPrice { get; set; } 
         public DateTime DateTaken { get; set; }  

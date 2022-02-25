@@ -59,7 +59,7 @@ namespace E_Commerce.Migrations
 
             modelBuilder.Entity("E_Commerce.Models.Images", b =>
                 {
-                    b.Property<int>("ItemNumber")
+                    b.Property<int>("ItemID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -78,21 +78,21 @@ namespace E_Commerce.Migrations
                     b.Property<double>("ItemPrice")
                         .HasColumnType("REAL");
 
-                    b.HasKey("ItemNumber");
+                    b.HasKey("ItemID");
 
                     b.ToTable("Images");
                 });
 
             modelBuilder.Entity("E_Commerce.Models.Orders", b =>
                 {
-                    b.Property<int>("OrderNumber")
+                    b.Property<int>("OrderID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INT");
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("CustomerName")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("ItemNumber")
+                    b.Property<int>("ItemID")
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("ItemPrice")
@@ -110,22 +110,22 @@ namespace E_Commerce.Migrations
                     b.Property<decimal>("OrderTotal")
                         .HasColumnType("TEXT");
 
-                    b.HasKey("OrderNumber");
+                    b.HasKey("OrderID");
 
                     b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("ImagesOrders", b =>
                 {
-                    b.Property<int>("ImageItemNumber")
+                    b.Property<int>("ImageItemID")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("OrdersOrderNumber")
-                        .HasColumnType("INT");
+                    b.Property<int>("OrdersOrderID")
+                        .HasColumnType("INTEGER");
 
-                    b.HasKey("ImageItemNumber", "OrdersOrderNumber");
+                    b.HasKey("ImageItemID", "OrdersOrderID");
 
-                    b.HasIndex("OrdersOrderNumber");
+                    b.HasIndex("OrdersOrderID");
 
                     b.ToTable("ImagesOrders");
                 });
@@ -134,13 +134,13 @@ namespace E_Commerce.Migrations
                 {
                     b.HasOne("E_Commerce.Models.Images", null)
                         .WithMany()
-                        .HasForeignKey("ImageItemNumber")
+                        .HasForeignKey("ImageItemID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("E_Commerce.Models.Orders", null)
                         .WithMany()
-                        .HasForeignKey("OrdersOrderNumber")
+                        .HasForeignKey("OrdersOrderID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

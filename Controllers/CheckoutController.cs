@@ -12,7 +12,6 @@ using System.Net.Http.Json;
 using E_Commerce.Models;
 using E_Commerce.Data;
 using System.Text.Encodings.Web;
-using E_Commerce.Data.Services;
 using Stripe.Checkout;
 using Stripe;
 

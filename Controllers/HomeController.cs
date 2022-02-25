@@ -5,7 +5,6 @@ using E_Commerce.Data;
 using System;
 using System.IO;
 using System.Threading.Tasks;
-using E_Commerce.Data.Services;
 
 namespace E_Commerce.Controllers
 {
@@ -37,14 +36,6 @@ namespace E_Commerce.Controllers
             return View(AllCustomers);
         } 
 
-        public IActionResult Gallery()
-        {
-            return View();
-        }
-        public IActionResult Shows()
-        {
-            return View();
-        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

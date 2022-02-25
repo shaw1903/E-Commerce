@@ -17,7 +17,6 @@ using System.IO;
 using static System.Console;
 using System.Net.Http.Headers;
 using E_Commerce.Controllers;
-using E_Commerce.Data.Services;
 using Stripe.Checkout;
 using Stripe;
 
@@ -28,6 +27,8 @@ if(builder.Environment.IsDevelopment())
 builder.Services.AddDbContext<JumaContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
     builder.Services.AddScoped<IImageService, ImageService>();
+    builder.Services.AddScoped<ImageService, ImageService>();
+
 }
 else
 {
